@@ -21,6 +21,13 @@ Spiderman es un superhéroe ficticio creado por el escritor Stan Lee y el dibuja
 - Annie Parker (hija en algunas versiones)
 - Benjamin "Benjy" Parker (hijo en algunas versiones alternativas)
 
+## Conocidos
+
+- Ned Leeds
+- Harry Osborn
+- Flash Thompson
+- Robbie Robertson
+
 ## Películas
 
 - Spiderman: No way home
