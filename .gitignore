@@ -1,0 +1,17 @@
+# Archivos de entorno (ya los tienes cubiertos)
+*.env
+codigos-lanzamiento.env
+
+# Dependencias y compilados
+dist/
+node_modules/
+
+# Archivos de log
+logs/server*.log
+!logs/server.log
+
+# Archivos del sistema operativo y del editor
+.DS_Store
+Thumbs.db
+.vscode/
+.idea/
