@@ -1,7 +1,7 @@
 ---
 name: Template para bugs de software
 about: Ayudanos a mejorar
-title: 'Bub:'
+title: 'Bug:'
 labels: bug, enhancement
 assignees: Juan-Uriel-Rayo
 
