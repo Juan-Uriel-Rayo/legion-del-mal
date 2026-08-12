@@ -31,6 +31,8 @@ Spiderman es un superhéroe ficticio creado por el escritor Stan Lee y el dibuja
 - Spiderman 1
 - Spiderman 2
 - Spiderman 3
+- Spider-Man: Un nuevo universo (2018)
+- Spider-Man: Cruzando el Multiverso (2023)
 
 ## Estrategia recomendada
 
