@@ -6,6 +6,8 @@ Spiderman es un superhéroe ficticio creado por el escritor Stan Lee y el dibuja
 
 - Doctor Octopus
 - Green Goblin
+- Duende Verde
+- Venon
 
 ## Familiares
 
