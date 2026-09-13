@@ -23,17 +23,62 @@ jobs:
           echo "Workflow: ${{ github.workflow }}"
           echo "Número de ejecución: ${{ github.run_number }}"
 
-      - name: Información del sistema
+      - name: Capacidades del agente
         run: |
-          echo "INFORMACIÓN DEL SISTEMA"
-          echo "======================="
-          echo "Sistema operativo:"
-          uname -a
+          echo "CAPACIDADES DEL AGENTE"
+          echo "======================"
           echo ""
+
+          echo "Sistema operativo:"
+          lsb_release -d
+          echo ""
+
+          echo "Kernel:"
+          uname -r
+          echo ""
+
+          echo "Git:"
+          git --version
+          echo ""
+
+          echo "Node.js:"
+          node --version
+          echo ""
+
+          echo "NPM:"
+          npm --version
+          echo ""
+
+          echo "Python:"
+          python --version
+          echo ""
+
+          echo "Java:"
+          java -version
+          echo ""
+
+          echo "Docker:"
+          docker --version
+          echo ""
+
+          echo "CPU disponibles:"
+          nproc
+          echo ""
+
+          echo "Memoria disponible:"
+          free -h
+
+      - name: Reconocimiento del terreno
+        run: |
+          echo "RECONOCIMIENTO DEL TERRENO"
+          echo "=========================="
+          echo ""
+
           echo "Directorio actual:"
           pwd
           echo ""
-          echo "Archivos disponibles:"
+
+          echo "Archivos y directorios encontrados:"
           ls -la
 
       - name: Misión completada
