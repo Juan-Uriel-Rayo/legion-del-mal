@@ -33,7 +33,7 @@ jobs:
           ls planes/
 
           echo ""
-          echo "Villanos:"
+          echo "Miembros:"
           ls miembros/
 
           echo ""
