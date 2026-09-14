@@ -34,7 +34,7 @@ jobs:
 
           echo ""
           echo "Villanos:"
-          ls villanos/
+          ls miembros/
 
           echo ""
           echo "Inteligencia:"
