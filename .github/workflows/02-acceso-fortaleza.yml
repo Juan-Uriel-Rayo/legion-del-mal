@@ -2,7 +2,7 @@ name: 🗻 Acceso a la fortaleza prohibida
 
 # on: push
 on:
-   workflow_dispatch:
+  workflow_dispatch:
 
 jobs:
   acceso-a-la-base:
@@ -11,24 +11,62 @@ jobs:
     steps:
       - name: El agente llega a la fortaleza
         run: |
-            echo "Agente ${{ github.actor }} llega a la fortaleza"
-            echo "Buscar los archivos de la legión"
-            ls -la
-            echo ""
-            echo "❌ pero qué pasó? no hay nada"
+          echo "Agente ${{ github.actor }} llega a la fortaleza"
+          echo "Buscar los archivos de la Legión"
+          ls -la
+          echo ""
+          echo "❌ Pero... ¿qué pasó? No hay nada"
 
-      - name: 'Brainiac desbloquea la bóveda'
+      - name: Brainiac desbloquea la bóveda
         uses: actions/checkout@v4
 
-      - name: 'Ahora si, vamos a ver los planes'
-        run: | 
-            echo "Buscar los archivos de la Legión"
-            ls -la
-            echo "✅ Funciona!!!"
-            echo ""
-            echo "Planes:"
-            ls planes/
-            echo "Villanos:"
-            ls villanos/
-            echo "Inteligencia:"
-            ls inteligencia/
+      - name: Ahora sí, vamos a ver los planes
+        run: |
+          echo "ARCHIVOS DE LA LEGIÓN"
+          echo "====================="
+          ls -la
+          echo ""
+          echo "✅ Acceso concedido"
+
+          echo ""
+          echo "Planes:"
+          ls planes/
+
+          echo ""
+          echo "Villanos:"
+          ls villanos/
+
+          echo ""
+          echo "Inteligencia:"
+          ls inteligencia/
+
+      - name: Analizar registros de la fortaleza
+        run: |
+          echo "REGISTROS DE LA FORTALEZA"
+          echo "=========================="
+          echo ""
+          echo "Repositorio: ${{ github.repository }}"
+          echo "Agente: ${{ github.actor }}"
+          echo "Rama: ${{ github.ref_name }}"
+          echo "Commit: ${{ github.sha }}"
+          echo ""
+          echo "Último commit:"
+          git log -1 --oneline
+
+      - name: Escanear la fortaleza
+        run: |
+          echo "ESCANEO DE LA FORTALEZA"
+          echo "========================"
+          echo ""
+          echo "Cantidad total de archivos:"
+          find . -type f | wc -l
+          echo ""
+          echo "Estructura encontrada:"
+          find . -maxdepth 2 -type f
+
+      - name: Acceso completado
+        run: |
+          echo "================================"
+          echo "🟢 OPERACIÓN COMPLETADA"
+          echo "La fortaleza ha sido inspeccionada"
+          echo "================================"
